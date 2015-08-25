@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="mod-ear-0.0.1-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="mod-domain-services-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/mod-domain-services/mod-domain-services">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mod-business-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/mod-business/mod-business">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mod-web-0.0.1-SNAPSHOT.war" deploy-path="/" handle="module:/resource/mod-web/mod-web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mod-core-0.0.1-SNAPSHOT.jar" deploy-path="/lib/" handle="module:/resource/mod-core/mod-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mod-shared-domain-entities-0.0.1-SNAPSHOT.jar" deploy-path="/lib/" handle="module:/resource/mod-shared-domain-entities/mod-shared-domain-entities">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-1.2.17.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="component.exclusion.patterns"/>
+    </wb-module>
+</project-modules>

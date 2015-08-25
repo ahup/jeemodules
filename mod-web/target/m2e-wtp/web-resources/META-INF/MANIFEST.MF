@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Class-Path: lib/mod-core-0.0.1-SNAPSHOT.jar lib/mod-shared-domain-enti
+ ties-0.0.1-SNAPSHOT.jar
+Build-Jdk: 1.7.0_72
+Built-By: ahup
+Created-By: Maven Integration for Eclipse
+
