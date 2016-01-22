@@ -2,6 +2,8 @@ package nl.agileprof.domain.address.dao;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -15,6 +17,7 @@ import org.apache.log4j.Logger;
 @Stateless
 @Local(AddressDaoInterface.class)
 @Named
+@TransactionAttribute(TransactionAttributeType.REQUIRED)
 public class AddressDao implements AddressDaoInterface {
 	
 	private static final String UNIT_NAME = "mod-datainteractie";
@@ -49,11 +52,10 @@ public class AddressDao implements AddressDaoInterface {
 		return entity;
 	}
 
-
 	@Override
 	public Address findByPostcodeHousenumber(String zipcode, String housenumber) {
-		TypedQuery<Address> query = entityManager.createQuery("select a from Address a where a.zipcode = :zipcode and a.housenumber = :housenumber", Address.class);
-		query.setParameter("zipcode" , zipcode);
+		TypedQuery<Address> query = entityManager.createQuery("select a from Address a where a.housenumber = :housenumber", Address.class);
+//		query.setParameter("zipcode" , zipcode);
 		query.setParameter("housenumber" , housenumber);
 		return query.getSingleResult();
 	}

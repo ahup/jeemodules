@@ -22,6 +22,7 @@ public class ModServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().print(testEJBInterface.test());
+		
 	}
 
 }

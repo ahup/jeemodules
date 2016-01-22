@@ -8,6 +8,9 @@
         <dependent-module archiveName="mod-business-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/mod-business/mod-business">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="mod-persistence-0.0.1-SNAPSHOT.jar" deploy-path="/lib/" handle="module:/resource/mod-persistence/mod-persistence">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="mod-web-0.0.1-SNAPSHOT.war" deploy-path="/" handle="module:/resource/mod-web/mod-web">
             <dependency-type>uses</dependency-type>
         </dependent-module>

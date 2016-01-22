@@ -20,8 +20,9 @@ public class TestEJB implements TestEJBInterface {
 	public String test() {
 		String zipcode="1111AA";
 		String housenumber = "1";
-		Address address = addressDao.findByPostcodeHousenumber(zipcode, housenumber);
-		return "Address\n street: " + address.getStreet();
+		//Address address = addressDao.findByPostcodeHousenumber(zipcode, housenumber);
+		Address address = addressDao.findById(Address.class, new Long(1));
+		return address.toString() ;
 	}
 	
 }

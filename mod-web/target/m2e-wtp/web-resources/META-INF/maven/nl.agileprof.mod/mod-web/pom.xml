@@ -20,15 +20,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.apache.geronimo.specs</groupId>
-			<artifactId>geronimo-ejb_3.1_spec</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.geronimo.specs</groupId>
-			<artifactId>geronimo-servlet_3.0_spec</artifactId>
-			<version>1.0</version>
-			<scope>provided</scope>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -50,34 +43,12 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-<!-- 	<build>
-		<resources>
-			<resource>
-				<filtering>false</filtering>
-				<directory>src/main/java</directory>
-			</resource>
-			<resource>
-				<filtering>true</filtering>
-				<directory>src/main/resources</directory>
-			</resource>
-		</resources>
 
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<packagingExcludes>WEB-INF/lib/*.jar,log4j.properties</packagingExcludes>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build> -->
+	<!-- <build> <resources> <resource> <filtering>false</filtering> <directory>src/main/java</directory> 
+		</resource> <resource> <filtering>true</filtering> <directory>src/main/resources</directory> 
+		</resource> </resources> <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId> 
+		<artifactId>maven-war-plugin</artifactId> <configuration> <packagingExcludes>WEB-INF/lib/*.jar,log4j.properties</packagingExcludes> 
+		<archive> <manifest> <addClasspath>true</addClasspath> <classpathPrefix>lib/</classpathPrefix> 
+		</manifest> </archive> </configuration> </plugin> </plugins> </build> -->
 
 </project>

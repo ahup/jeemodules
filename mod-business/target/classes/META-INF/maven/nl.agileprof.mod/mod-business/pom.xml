@@ -21,22 +21,10 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.apache.geronimo.specs</groupId>
-			<artifactId>geronimo-atinject_1.0_spec</artifactId>
-			<scope>provided</scope>
+			<!-- Test dependencies -->
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>org.apache.geronimo.specs</groupId>
-			<artifactId>geronimo-jcdi_1.0_spec</artifactId>
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.geronimo.specs</groupId>
-			<artifactId>geronimo-ejb_3.1_spec</artifactId>
-		</dependency>
-
 		<!-- <dependency> <groupId>com.h2database</groupId> <artifactId>h2</artifactId> 
 			<version>1.4.182</version> </dependency> -->
 	</dependencies>
